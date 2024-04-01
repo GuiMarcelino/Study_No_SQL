@@ -34,7 +34,22 @@ Aqui estão os principais tipos e como eles lidam com estruturas de dados, semel
 
 - **Estruturas de Dados Flexíveis:** NoSQL oferece mais flexibilidade em termos de estruturas de dados, não exigindo um esquema fixo. Isso permite um desenvolvimento mais rápido e iterativo de aplicações.
 
-## Conclusão
+## Diferenças SQL"ACID"  NoSQL(BASE)
 
-Entender as diferenças entre SQL e NoSQL é crucial para escolher a tecnologia certa para as necessidades de armazenamento de dados de sua aplicação. Cada tipo tem suas vantagens e desvantagens, dependendo do caso de uso específico.
+## SQL:
+
+Os bancos de dados SQL seguem o modelo ACID para transações, garantindo:
+
+- **Atomicidade:** Uma transação é uma unidade indivisível de operação. Isso significa que todas as operações dentro da transação são executadas ou nenhuma é.
+- **Consistência:** As transações levam o banco de dados de um estado consistente para outro, mantendo a integridade dos dados.
+- **Isolamento:** Transações executadas simultaneamente não interferem umas nas outras.
+- **Durabilidade:** Uma vez que a transação é confirmada, ela permanece gravada no banco de dados, mesmo em caso de falha.
+
+## NoSQL:
+
+Os bancos de dados NoSQL seguem o modelo BASE, que é mais flexível que o ACID e se concentra em:
+
+- **Basically Available:** Garante a disponibilidade básica do banco de dados em larga escala, mesmo em face de falhas parciais.
+- **Soft-State:** O estado do banco de dados pode mudar com o tempo, mesmo sem input.
+- **Eventually Consistent:** O banco de dados pode não ser imediatamente consistente, mas chegará a um estado consistente eventualmente.
 
