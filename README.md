@@ -12,13 +12,6 @@ Esses bancos de dados são projetados para oferecer flexibilidade de esquema, es
 - **Escalabilidade Horizontal:** Permite adicionar mais servidores para lidar com o aumento no volume de dados e tráfego.
 - **Alto Desempenho:** Otimizado para oferecer um desempenho superior em certos tipos de operações e aplicações.
 
-## Tipos de Bancos de Dados NoSQL
-
-- **Documentos:** Exemplos incluem MongoDB e CouchDB.
-- **Colunas:** Exemplos incluem Cassandra e HBase.
-- **Grafos:** Exemplos incluem Neo4j e ArangoDB.
-- **Chave-Valor:** Exemplos incluem Redis e DynamoDB.
-
 ## Uso de NoSQL
 
 Os bancos de dados NoSQL são ideais para aplicações que necessitam de escalabilidade, flexibilidade e alto desempenho, tais como serviços de redes sociais, armazenamento de dados de IoT, análise em tempo real e mais.
