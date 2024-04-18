@@ -112,3 +112,23 @@
           {name: 'Kathy', age: 23}
         ]);
       ```
+
+# Atualização de documentos:
+- **UPDATE:**
+
+  - Usando o **updateOne:**
+    - Para atualizar um único documento:
+      ```json
+      db.people.updateOne(
+        { name: 'Tom' }, // filtro para identificar o documento
+        { $set: { age: 29, name: 'Tom' } } // uso do operador $set para atualizar os campos
+      );
+      ```
+  - Usando o **updateMany:**
+    - Para atualizar múltiplos documentos de uma vez:
+      ```json
+        db.people.updateMany(
+          { name: 'Tom' }, // filtro para identificar os documentos
+          { $set: { age: 29, name: 'Tom' } } // uso do operador $set para atualizar os campos
+        );
+      ```
