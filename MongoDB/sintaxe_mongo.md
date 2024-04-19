@@ -132,3 +132,17 @@
           { $set: { age: 29, name: 'Tom' } } // uso do operador $set para atualizar os campos
         );
       ```
+
+   - Usando o **replaceOne:**
+      - Para atualizar vários campos de um  unico documento, o ObjectId é   filtro usado para encontrar o   documento que você quer substituir:
+      ```json
+        db.people.replaceOne(
+          { 
+            _id: ObjectId('6621b32814facb3a977b2da9') }, 
+          {
+            name: 'Tom',
+            age: 26
+          }
+        );
+
+      ```
