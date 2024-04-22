@@ -144,5 +144,28 @@
             age: 26
           }
         );
+      ```
+# Exclusão de documentos:
+- **DELETE:**
 
+  - Usando o **deleteOne:**
+    - Este comando exclui o primeiro documento que corresponde ao critério de filtro fornecido.
+      ```json
+        db.people.deleteMany({name: 'Tom'});
+      ```
+  - Usando o **deleteMany:**
+    - Este comando exclui todos os documentos onde o campo name é igual a 'Tom':
+      ```json
+        db.people.deleteOne({name: 'Tom'});
+      ```
+
+   - Usando o **remove:**
+      - Para excluir um documento:
+      ```json
+        db.people.remove({name: 'Tom'}, true);
+      ```
+
+      - Para excluir múltiplos documentos:
+      ```json
+        db.people.remove({name: 'Tom'});
       ```
