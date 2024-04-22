@@ -16,6 +16,13 @@ Esses bancos de dados são projetados para oferecer flexibilidade de esquema, es
 
 Os bancos de dados NoSQL são ideais para aplicações que necessitam de escalabilidade, flexibilidade e alto desempenho, tais como serviços de redes sociais, armazenamento de dados de IoT, análise em tempo real e mais.
 
+## Fontes:
+https://www.mongodb.com/docs/
+
+https://www.w3schools.com/mongodb/
+
+https://books.goalkicker.com/MongoDBBook/
+
 ## Fico a disposição para novas conexões e troca de conhecimento:
 
 - **LinkedIn** 🌐: [linkedin.com/in/guilherme-dev-backend](https://linkedin.com/in/guilherme-dev-backend)
