@@ -146,20 +146,18 @@
         );
       ```
 # Exclusão de documentos:
-- **DELETE:**
-
   - Usando o **deleteOne:**
-    - Este comando exclui o primeiro documento que corresponde ao critério de filtro fornecido.
+    - Este comando exclui o primeiro documento que corresponde ao critério de filtro fornecido:
       ```json
         db.people.deleteMany({name: 'Tom'});
       ```
-  - Usando o **deleteMany:**
-    - Este comando exclui todos os documentos onde o campo name é igual a 'Tom':
+    - Usando o **deleteMany:**
+      - Este comando exclui todos os documentos onde o campo name é igual a 'Tom':
       ```json
         db.people.deleteOne({name: 'Tom'});
       ```
 
-   - Usando o **remove:**
+    - Usando o **remove:**
       - Para excluir um documento:
       ```json
         db.people.remove({name: 'Tom'}, true);
@@ -169,3 +167,21 @@
       ```json
         db.people.remove({name: 'Tom'});
       ```
+
+# Consultar documentos:
+  - Usando o **find:**
+    - Para buscar todos os documentos na coleção people que tenham o campo name com o valor 'Tom':
+      ```json
+        db.people.find({name: 'Tom'})
+      ```
+  - Usando o **findOne:**
+    - Para buscar apenas o primeiro documento que corresponde ao critério:
+      ```json
+        db.people.findOne({name: 'Tom'})
+      ```
+
+  - Usando o **Excluir e Incluir Campos:**
+    - Para excluir o campo _id e incluir apenas o campo age nos documentos retornados:
+    ```json
+      db.people.find({name: 'Tom'}, {_id: 0, age: 1})
+    ```
